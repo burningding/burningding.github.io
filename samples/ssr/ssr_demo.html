@@ -97,7 +97,7 @@ main table.samples td{
 Systems:
 
 <ul>
-<li><b>CSR (Proposed)</b>: The sparse representation-based method that constructs the structured dictionaries using phoneme labels in training and jointly optimized the standard cost function along with the Phoneme-Selective Object Function in sparse coding at runtime.</li>
+<li><b>SSR (Proposed)</b>: The sparse representation-based method that constructs the structured dictionaries using phoneme labels in training and jointly optimized the standard cost function along with the Phoneme-Selective Object Function in sparse coding at runtime.</li>
 <li><b>GMM [2]</b>: GMM based VC method. It used a GMM to model the joint distribution of the source speech frames and the target speech frames.</li>
 <li><b>PSOF [3]</b>: The sparse representation-based method that constructs the structured dictionaries using phoneme labels in training and jointly optimized the standard cost function along with the Phoneme-Selective Object Function in sparse coding at runtime.</li>
 <li><b>HDDL [4]</b>: The sparse representation-based method that learned the structured dictionary directly from phonetic structures in the joint source-target space with no supervision in training and selected the most likely sub-dictionary for sparse coding at runtime. </li>
@@ -112,7 +112,7 @@ Systems:
 		<th></th>
 		<th>Source</th>
 		<th>Target</th>
-		<th>CSR (Proposed)</th>
+		<th>SSR (Proposed)</th>
 		<th>GMM</th>
 		<th>PSOF</th>
 		<th>HDDL</th>
@@ -121,32 +121,32 @@ Systems:
 		<td>Sample 1</ >
 		<td>
 			<audio controls="" style="width: 250px;">
+				<source src="src/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
 				<source src="ssr/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="media/icassp18/aba_original.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="gmm/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="media/icassp18/aba_as.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="psof/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="media/icassp18/aba_dtw.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="media/icassp18/aba_ls.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="media/icassp18/aba_ls.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="hddl/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 	</tr>
