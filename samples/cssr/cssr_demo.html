@@ -1,0 +1,588 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>CSSR Audio Samples</title></head>
+<style>
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.title {
+	background-color: rgb(80,0,0);
+	width: 100%;
+	text-align: center
+}
+
+.title td{
+	padding: 5px;
+}
+
+.title .logo{
+	width: 220px;
+}
+
+.title h1{
+	font-size: 18pt;
+	font-family: avant garde, verdana, helvetica, sans-serif;
+	color: white;
+	line-height: 1.15;
+}
+
+.title h2{
+	font-size: 12pt;
+	font-family: georgia, times new roman, serif;
+	font-style: italic;
+	color: white;
+	line-height: 1.15;
+}
+
+main{
+	font-family: serif;
+	font-size: 18px;
+	padding: 0 10px 0 10px;
+}
+
+main h1{
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
+main table.samples{
+	text-align: center;
+}
+
+main table.samples th{
+	border-bottom: 2px solid #333;
+	width: 14%;
+	height: 60px;
+}
+
+main table.samples td{
+	border-right: 1px #333 solid;
+	border-bottom: 1px #666 solid;
+	width: 14%;
+	height: 60px;
+}
+
+.mtf { 
+	background-color: rgb(225, 225, 255);
+}
+
+.ftm{
+	background-color: rgb(255, 225, 225);
+}
+
+.source{
+	background-color: rgb(225, 255, 225);
+}
+</style>
+<body>
+<table class="title">
+<tbody>
+<tr>
+<td>
+<h1>Unsupervised Learning Structured Sparse Representations for Voice Conversion</h1>
+<h2>Shaojin Ding, Guanlong Zhao, Christopher Liberatore, Ricardo Gutierrez-Osuna</h2>
+<h2>Department of Computer Science and Engineering, Texas A&M University, USA</h2>
+</td>
+</tbody>
+</table>
+<main>
+
+<h1>Voice Conversion Audio Samples</h1>
+
+<p>Dataset: CMU ARCTIC dataset <a href="http://www.festvox.org/cmu_arctic">[1]</a><p>
+<hr>
+Systems:
+
+<ul>
+<li><b>CSSR (Proposed)</b>: The method proposed in this paper.</li>
+<li><b>System 1 [2]</b>: The method we proposed in [2], which constructs the structured dictionaries using phoneme labels during training and jointly optimizes the standard cost function along with the Phoneme-Selective Object Function  (eq. (6))  at runtime. </li>
+<li><b>System 2 [3]</b>: The method we proposed in [3], which learns the structured dictionary in the joint source-target space without supervision (i.e., without phoneme labels) during training and selects the most likely sub-dictionary [13] using the standard cost function (eq. (2)) at runtime.  </li>
+<li><b>Baseline [4]</b>: A GMM-based VC method that models the joint distribution of source and target speech frames. </li>
+</ul>
+<hr>
+
+<h2>Male &rarr; Male</h2>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th></th>
+		<th>Source</th>
+		<th>Target</th>
+		<th>CSSR (Proposed)</th>
+		<th>System 1</th>
+		<th>System 2</th>
+		<th>Baseline</th>
+	</tr>
+	<tr>
+		<td>Sample 1</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 2</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 3</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Male &rarr; Female</h2>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th></th>
+		<th>Source</th>
+		<th>Target</th>
+		<th>CSSR (Proposed)</th>
+		<th>System 1</th>
+		<th>System 2</th>
+		<th>Baseline</th>
+	</tr>
+		<tr>
+		<td>Sample 1</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mf/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 2</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mf/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 3</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/mf/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Female &rarr; Female</h2>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th></th>
+		<th>Source</th>
+		<th>Target</th>
+		<th>CSSR (Proposed)</th>
+		<th>System 1</th>
+		<th>System 2</th>
+		<th>Baseline</th>
+	</tr>
+		<tr>
+		<td>Sample 1</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/ff/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 2</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/ff/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 3</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/ff/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Female &rarr; Male</h2>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th></th>
+		<th>Source</th>
+		<th>Target</th>
+		<th>CSSR (Proposed)</th>
+		<th>System 1</th>
+		<th>System 2</th>
+		<th>Baseline</th>
+	</tr>
+		<tr>
+		<td>Sample 1</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/fm/arctic_a0588.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 2</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/fm/arctic_a0590.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Sample 3</ >
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="src/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="tgt/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="cssr/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system1/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="system2/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="baseline/fm/arctic_a0593.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<hr>
+<h1>References</h1>
+<p>[1] J. Kominek and A. W. Black, "The CMU Arctic speech databases," in Fifth ISCA Workshop on Speech Synthesis, 2004. <a href="https://www.isca-speech.org/archive_open/archive_papers/ssw5/ssw5_223.pdf">[PDF]</a></p>  
+<p>[2] S. Ding, G. Zhao, C. Liberatore, and R. Gutierrez-Osuna, "Improving Sparse Representations in Exemplar-Based Voice Conversion with a Phoneme-Selective Objective Function," Proc. Interspeech 2018, pp. 476-480, 2018. <a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1272.pdf">[PDF]</a></p> 
+<p>[3] S. Ding, C. Liberatore, and R. Gutierrez-Osuna, "Learning Structured Dictionaries for Exemplar-based Voice Conversion," Proc. Interspeech 2018, pp. 481-485, 2018. <a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1295.pdf">[PDF]</a></p> </p> 
+<p>[4] T. Toda, A. W. Black, and K. Tokuda, "Voice conversion based on maximum-likelihood estimation of spectral parameter trajectory," IEEE Transactions on Audio, Speech, and Language Processing, vol. 15, pp. 2222-2235, 2007. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4317579">[PDF]</a></p>
+</main>
+</body></html>
