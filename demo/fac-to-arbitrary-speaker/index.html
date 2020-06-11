@@ -1,0 +1,623 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Audio Samples</title></head>
+<style>
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.title {
+	background-color: rgb(80,0,0);
+	width: 100%;
+	text-align: center
+}
+
+.title td{
+	padding: 5px;
+}
+
+.title .logo{
+	width: 220px;
+}
+
+.title h1{
+	font-size: 18pt;
+	font-family: avant garde, verdana, helvetica, sans-serif;
+	color: white;
+	line-height: 1.15;
+}
+
+.title h2{
+	font-size: 12pt;
+	font-family: georgia, times new roman, serif;
+	font-style: italic;
+	color: white;
+	line-height: 1.15;
+}
+
+main{
+	font-family: serif;
+	font-size: 18px;
+	padding: 0 10px 0 10px;
+}
+
+main h1{
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
+main table.samples{
+	text-align: center;
+}
+
+main table.samples th{
+	border-bottom: 2px solid #333;
+	width: 14%;
+	height: 60px;
+}
+
+main table.samples td{
+	border-right: 1px #333 solid;
+	border-bottom: 1px #666 solid;
+	width: 14%;
+	height: 60px;
+}
+
+.mtf { 
+	background-color: rgb(225, 225, 255);
+}
+
+.ftm{
+	background-color: rgb(255, 225, 225);
+}
+
+.source{
+	background-color: rgb(225, 255, 225);
+}
+</style>
+<body>
+<table class="title">
+<tbody>
+<tr>
+<td>
+<h1>Foreign Accent Conversion to arbitrary non-native speaker</h1>
+<h2>Shaojin Ding, Guanlong Zhao, Ricardo Gutierrez-Osuna</h2>
+<h2>Department of Computer Science and Engineering, Texas A&M University, USA</h2>
+</td>
+</tbody>
+</table>
+<main>
+
+<h1>Accent Conversion Audio Samples</h1>
+
+<p>Dataset: CMU ARCTIC <a href="http://www.festvox.org/cmu_arctic/">[1]</a> and L2-ARCTIC <a href="https://psi.engr.tamu.edu/l2-arctic-corpus/">[2]</a><p>
+<hr>
+<h1>Comparison under standard foreign accent conversion condition (L1 and L2 speakers were seen during training)</h1>
+<h2>Systems:</h2>
+<ul>
+<li><b>Baseline 1 [3]</b>: PPG-based frame pairing + joint-density GMM conversion.</li>
+<li><b>Baseline 2 [4]</b>: PPG-to-speech synthesizer.</li>
+<li><b>Proposed</b>: Proposed approach.</li>
+</ul>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th>L2 speaker</th>
+		<th>Text</th>
+		<th>L1 reference speech</th>
+		<th>L2 reference speech</th>
+		<th>Baseline 1</th>
+		<th>Baseline 2</th>
+		<th>Proposed</th>
+	</tr>
+	<tr>
+		<td>NJS</td>
+		<td>I'll tell you, the librarian said with a brightening face.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline1/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline2/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/proposed/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>TXHC</td>
+		<td>But she had become an automaton.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline1/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline2/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/proposed/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>YKWK</td>
+		<td>At the best, they were necessary accessories.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline1/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline2/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/proposed/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>ZHAA</td>
+		<td>You were making them talk shop, Ruth charged him.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline1/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/baseline2/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1/proposed/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<h1>Comparison under different zero-shot foreign accent conversion conditions (L1 and (or) L2 speakers were seen during training)</h1>
+<h2>Systems:</h2>
+<ul>
+<li><b>Condition 1</b>: The L1 and L2 speakers were both seen during training.</li>
+<li><b>Condition 2</b>: The L1 speaker was unseen during training, and the L2 speaker was seen during training.</li>
+<li><b>Condition 3</b>: The L1 speaker was seen during training, and the L2 speaker was unseen during training.</li>
+<li><b>Condition 4</b>: The L1 and L2 speakers were both unseen during training.</li>
+</ul>
+
+<h2>Training configurations:</h2>
+<p>To guarantee the testing speakers are unknown during training, we trained four models using different training sets.</p>
+<ul>
+<li>In Condition 1, we used the same model as standard FAC condition.</li>
+<li>In Condition 2, we excluded the training set of CLB and used CLB as the testing L1 speaker.</li>
+<li>In condition 3, we excluded the training set of the four testing L2 speakers.</li>
+<li>In condition 4, we excluded the training set of CLB and four testing L2 speakers, and we also used CLB as the testing L1 speaker.</li>
+</ul>
+<p>For unseen L1/L2 speakers, we used the 50 utterances from the test set to generate the accent/speaker embedding.</p>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th>L2 speaker</th>
+		<th>Text</th>
+		<th>seen L1 reference (for condition 1/3)</th>
+		<th>unseen L1 reference speech (for condition 2/4)</th>
+		<th>L2 reference speech</th>
+		<th>Condition 1</th>
+		<th>Condition 2</th>
+		<th>Condition 3</th>
+		<th>Condition 4</th>
+	</tr>
+	<tr>
+		<td>NJS</td>
+		<td>I'll tell you, the librarian said with a brightening face.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/CLB/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition1/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition2/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition3/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition4/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>TXHC</td>
+		<td>But she had become an automaton.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/CLB/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition1/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition2/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition3/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition4/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	
+	<tr>
+		<td>YKWK</td>
+		<td>At the best, they were necessary accessories.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/CLB/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition1/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition2/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition3/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition4/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>ZHAA</td>
+		<td>You were making them talk shop, Ruth charged him.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/CLB/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition1/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition2/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition3/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2a/condition4/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+<hr>
+
+<h1>Influence of the number of available L2 utterances under zero-shot foreign accent conversion conditions</h1>
+<h2>Systems and configurations:</h2>
+<p>We used <b>Condition 3</b> as a baseline in this experiment, which used 50 test utterances to produce the speaker embedding during inference. We reduced the number from <b>50 to 1 (50,20,10,5,1)</b> and evaluated the system performance.</p>
+
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th>L2 speaker</th>
+		<th>Text</th>
+		<th>L1 reference</th>
+		<th>L2 reference speech</th>
+		<th>50</th>
+		<th>20</th>
+		<th>10</th>
+		<th>5</th>
+		<th>1</th>
+	</tr>
+	<tr>
+		<td>NJS</td>
+		<td>I'll tell you, the librarian said with a brightening face.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/50/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/20/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/10/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/5/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/1/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>TXHC</td>
+		<td>But she had become an automaton.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/50/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/20/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/10/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/5/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/1/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	
+	<tr>
+		<td>YKWK</td>
+		<td>At the best, they were necessary accessories.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/50/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/20/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/10/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/5/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/1/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>ZHAA</td>
+		<td>You were making them talk shop, Ruth charged him.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/50/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/20/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/10/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/5/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp2b/1/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+<hr>
+<h1>References</h1>
+<p>[1] Kominek, John, and Alan W. Black. "The CMU Arctic speech databases." Fifth ISCA workshop on speech synthesis. 2004. </p> 
+<p>[2] Zhao, Guanlong, et al. "L2-ARCTIC: A non-native English speech corpus." Perception Sensing Instrumentation Lab (2018).</p> 
+<p>[3] Zhao, Guanlong, et al. "Accent conversion using phonetic posteriorgrams." 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2018. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8462258">[PDF]</a></p> 
+<p>[4] Zhao, Guanlong, Shaojin Ding, and Ricardo Gutierrez-Osuna. "Foreign Accent Conversion by Synthesizing Speech from Phonetic Posteriorgrams." Proc. Interspeech. 2019. <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1778.pdf">[PDF]</a></p>
+</main>
+</body></html>
