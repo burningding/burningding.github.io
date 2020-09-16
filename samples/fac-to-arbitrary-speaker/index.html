@@ -82,7 +82,7 @@ main table.samples td{
 <tbody>
 <tr>
 <td>
-<h1>Foreign Accent Conversion to arbitrary non-native speaker</h1>
+<h1>Foreign Accent Conversion to arbitrary non-native speakerS</h1>
 <h2>Shaojin Ding, Guanlong Zhao, Ricardo Gutierrez-Osuna</h2>
 <h2>Department of Computer Science and Engineering, Texas A&M University, USA</h2>
 </td>
@@ -94,11 +94,11 @@ main table.samples td{
 
 <p>Dataset: CMU ARCTIC <a href="http://www.festvox.org/cmu_arctic/">[1]</a> and L2-ARCTIC <a href="https://psi.engr.tamu.edu/l2-arctic-corpus/">[2]</a><p>
 <hr>
-<h1>Comparison under standard foreign accent conversion condition (L1 and L2 speakers were seen during training)</h1>
+<h1>Section 5.1.1: Comparison under standard foreign accent conversion condition (L1 and L2 speakers were seen during training)</h1>
+<p>We use BDL as the L1 speaker for all L2 speakers.</p>
 <h2>Systems:</h2>
 <ul>
-<li><b>Baseline 1 [3]</b>: PPG-based frame pairing + joint-density GMM conversion.</li>
-<li><b>Baseline 2 [4]</b>: PPG-to-speech synthesizer.</li>
+<li><b>Baseline [3]</b>: PPG-to-speech synthesizer.</li>
 <li><b>Proposed</b>: Proposed approach.</li>
 </ul>
 
@@ -109,8 +109,7 @@ main table.samples td{
 		<th>Text</th>
 		<th>L1 reference speech</th>
 		<th>L2 reference speech</th>
-		<th>Baseline 1</th>
-		<th>Baseline 2</th>
+		<th>Baseline</th>
 		<th>Proposed</th>
 	</tr>
 	<tr>
@@ -128,17 +127,12 @@ main table.samples td{
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline1/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/baseline/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline2/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="exp1/proposed/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/proposed/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 	</tr>
@@ -158,17 +152,12 @@ main table.samples td{
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline1/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/baseline/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline2/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="exp1/proposed/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/proposed/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 	</tr>
@@ -188,17 +177,12 @@ main table.samples td{
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline1/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/baseline/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline2/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="exp1/proposed/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/proposed/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 	</tr>
@@ -218,17 +202,12 @@ main table.samples td{
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline1/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/baseline/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 		<td>
 			<audio controls="" style="width: 250px;">
-				<source src="exp1/baseline2/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-			</audio>
-		</td>
-		<td>
-			<audio controls="" style="width: 250px;">
-				<source src="exp1/proposed/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+				<source src="exp1a/proposed/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
 			</audio>
 		</td>
 	</tr>
@@ -238,21 +217,123 @@ main table.samples td{
 
 <hr>
 
-<h1>Comparison under different zero-shot foreign accent conversion conditions (L1 and (or) L2 speakers were seen during training)</h1>
+<h1>Section 5.1.2: Reverse foreign accent conversion under standard condition</h1>
+<p><b>Reverse foreign accent conversion:</b> Synthesize a voice that has L1 speaker's voice quality but an L2 accent.</p>
+<p>We use BDL as the L1 speaker for all L2 speakers.</p>
 <h2>Systems:</h2>
 <ul>
-<li><b>Condition 1</b>: The L1 and L2 speakers were both seen during training.</li>
-<li><b>Condition 2</b>: The L1 speaker was unseen during training, and the L2 speaker was seen during training.</li>
-<li><b>Condition 3</b>: The L1 speaker was seen during training, and the L2 speaker was unseen during training.</li>
-<li><b>Condition 4</b>: The L1 and L2 speakers were both unseen during training.</li>
+<li><b>Proposed</b>: Proposed approach.</li>
+</ul>
+<table width="100%" class="samples">
+<tbody>
+	<tr>
+		<th>L2 speaker</th>
+		<th>Text</th>
+		<th>L1 reference speech</th>
+		<th>L2 reference speech</th>
+		<th>Proposed</th>
+	</tr>
+	<tr>
+		<td>NJS</td>
+		<td>I'll tell you, the librarian said with a brightening face.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1b/proposed/NJS/arctic_b0534.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>TXHC</td>
+		<td>But she had become an automaton.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1b/proposed/TXHC/arctic_b0537.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>YKWK</td>
+		<td>At the best, they were necessary accessories.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1b/proposed/YKWK/arctic_b0538.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>ZHAA</td>
+		<td>You were making them talk shop, Ruth charged him.</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/BDL/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="orig/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+		<td>
+			<audio controls="" style="width: 250px;">
+				<source src="exp1b/proposed/ZHAA/arctic_b0539.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+			</audio>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+<hr>
+
+<h1>Section 5.2.1: Comparison under different zero-shot foreign accent conversion conditions (L1 and (or) L2 speakers were seen during training)</h1>
+<h2>Systems:</h2>
+<ul>
+<li><b>Condition SS</b>: The L1 and L2 speakers were both seen during training.</li>
+<li><b>Condition US</b>: The L1 speaker was unseen during training, and the L2 speaker was seen during training.</li>
+<li><b>Condition SU</b>: The L1 speaker was seen during training, and the L2 speaker was unseen during training.</li>
+<li><b>Condition UU</b>: The L1 and L2 speakers were both unseen during training.</li>
 </ul>
 
 <h2>Training configurations:</h2>
 <p>To guarantee the testing speakers are unknown during training, we trained four models using different training sets.</p>
 <ul>
-<li>In Condition 1, we used the same model as standard FAC condition.</li>
-<li>In Condition 2, we excluded the training set of CLB and used CLB as the testing L1 speaker.</li>
-<li>In condition 3, we excluded the training set of the four testing L2 speakers.</li>
+<li>In Condition SS, we used the same model as standard FAC condition.</li>
+<li>In Condition US, we excluded the training set of CLB and used CLB as the testing L1 speaker.</li>
+<li>In condition SU, we excluded the training set of the four testing L2 speakers.</li>
 <li>In condition 4, we excluded the training set of CLB and four testing L2 speakers, and we also used CLB as the testing L1 speaker.</li>
 </ul>
 <p>For unseen L1/L2 speakers, we used the 50 utterances from the test set to generate the accent/speaker embedding.</p>
@@ -262,13 +343,13 @@ main table.samples td{
 	<tr>
 		<th>L2 speaker</th>
 		<th>Text</th>
-		<th>seen L1 reference (for condition 1/3)</th>
-		<th>unseen L1 reference speech (for condition 2/4)</th>
+		<th>seen L1 reference (for condition SS/SU)</th>
+		<th>unseen L1 reference speech (for condition US/UU)</th>
 		<th>L2 reference speech</th>
-		<th>Condition 1</th>
-		<th>Condition 2</th>
-		<th>Condition 3</th>
-		<th>Condition 4</th>
+		<th>Condition SS</th>
+		<th>Condition US</th>
+		<th>Condition SU</th>
+		<th>Condition UU</th>
 	</tr>
 	<tr>
 		<td>NJS</td>
@@ -433,9 +514,9 @@ main table.samples td{
 </table>
 <hr>
 
-<h1>Influence of the number of available L2 utterances under zero-shot foreign accent conversion conditions</h1>
+<h1>Section 5.2.2: Influence of the number of available L2 utterances under zero-shot foreign accent conversion conditions</h1>
 <h2>Systems and configurations:</h2>
-<p>We used <b>Condition 3</b> as a baseline in this experiment, which used 50 test utterances to produce the speaker embedding during inference. We reduced the number from <b>50 to 1 (50,20,10,5,1)</b> and evaluated the system performance.</p>
+<p>We used <b>Condition UU</b> as a baseline in this experiment, which used 50 test utterances to produce the speaker embedding during inference. We reduced the number from <b>50 to 1 (50,20,10,5,1)</b> and evaluated the system performance.</p>
 
 <table width="100%" class="samples">
 <tbody>
@@ -616,8 +697,7 @@ main table.samples td{
 <hr>
 <h1>References</h1>
 <p>[1] J. Kominek and A. W. Black, "The CMU Arctic speech databases," in Fifth ISCA Workshop on Speech Synthesis, 2004.</p> 
-<p>[2] G. Zhao, S. Sonsaat, A. O. Silpachai, I. Lucic, E. Chukharev-Khudilaynen, J. Levis, et al., "L2-ARCTIC: A Non-Native English Speech Corpus," Perception Sensing Instrumentation Lab, 2018.</p> 
-<p>[3] G. Zhao and R. Gutierrez-Osuna, "Using Phonetic Posteriorgram Based Frame Pairing for Segmental Accent Conversion," IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, pp. 1649-1660, 2019. <a href="https://ieeexplore.ieee.org/abstract/document/8755490">[PDF]</a></p> 
-<p>[4] G. Zhao, S. Ding, and R. Gutierrez-Osuna, "Foreign Accent Conversion by Synthesizing Speech from Phonetic Posteriorgrams," Proc. Interspeech 2019, pp. 2843-2847, 2019. <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1778.pdf">[PDF]</a></p>
+<p>[2] G. Zhao, S. Sonsaat, A. O. Silpachai, I. Lucic, E. Chukharev-Khudilaynen, J. Levis, et al., "L2-ARCTIC: A Non-Native English Speech Corpus," Perception Sensing Instrumentation Lab, 2018.</p>  
+<p>[3] G. Zhao, S. Ding, and R. Gutierrez-Osuna, "Foreign Accent Conversion by Synthesizing Speech from Phonetic Posteriorgrams," Proc. Interspeech 2019, pp. 2843-2847, 2019. <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1778.pdf">[PDF]</a></p>
 </main>
 </body></html>
